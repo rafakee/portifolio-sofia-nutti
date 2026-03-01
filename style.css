@@ -48,12 +48,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  white-space: nowrap;
 }
 
 .logo {
   font-weight: 800;
   font-size: 1.6rem;
   letter-spacing: -1px;
+  white-space: nowrap;
 }
 
 .logo span {
@@ -70,7 +72,7 @@ body {
 }
 
 nav a {
-  margin-left: 2rem;
+  margin-left: 1rem;
   text-decoration: none;
   color: #444;
   font-weight: 500;
@@ -94,7 +96,7 @@ nav a:hover::after {
 }
 
 .hero {
-  padding: 8rem 0 6rem;
+  padding: 4rem 0 6rem;
   text-align: center;
 }
 
@@ -118,6 +120,7 @@ nav a:hover::after {
 
   img {
     position: relative;
+    pointer-events: none;
     z-index: 1;
   }
 }
@@ -152,7 +155,7 @@ nav a:hover::after {
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: #555;
 }
 
@@ -258,12 +261,13 @@ nav a:hover::after {
 
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   row-gap: 1rem;
   column-gap: 3rem;
   width: 100%;
   height: 100%;
   padding-inline: 1.5rem;
+  padding-bottom: 1rem;
 
   li {
     font-size: 1.2rem;
@@ -283,7 +287,7 @@ nav a:hover::after {
   display: grid;
   grid-template-columns: repeat(2, minmax(70px, 1fr));
   row-gap: 1rem;
-  column-gap: 3rem;
+  column-gap: 5rem;
   width: 100%;
   height: 100%;
   padding-inline: 1.5rem;
@@ -295,7 +299,7 @@ nav a:hover::after {
 
     p {
       margin-top: 12px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
 }
